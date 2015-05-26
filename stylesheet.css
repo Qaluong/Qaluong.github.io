@@ -1,0 +1,45 @@
+.heading {
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #333333;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15%;
+    padding-right: 15%;
+    display: block;
+}
+
+.titleName {
+    vertical-align: middle;
+    display: table-cell;
+    height: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-decoration: none;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav {
+    padding-left: 20px;
+    padding-right: 20px;
+    vertical-align: middle;
+    display: table-cell;
+    height: 60px;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    float: right;
+}
+
+.nav:hover {
+    background: #339966;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
