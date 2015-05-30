@@ -1,16 +1,21 @@
 #upper {
     background: url("background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    height: 500px;
-    text-align: left;
+    height: 720px;
 }
 
 #upperText {
-    font-family: Oswald;
+    font-family: Oswald, sans-serif;
     color: #FFFFFF;
-    padding-left: 10%;
-    padding-top: 175px;
+    position: relative;
+    top: 50%;
+    margin-left: 10%;
+    transform: translateY(-55%);
 }
+
+
 
 #fullname {
     font-weight: 400;
@@ -44,4 +49,32 @@ a {
 
 body {
     margin: 0px 0px 0px 0px;
+}
+
+@media screen and (max-width: 1024px) {
+    #upperText {
+        margin: auto;
+        text-align: center;
+        }
+    #fullname {
+        padding-left: .148em;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #fullname {
+        font-size: 4em;
+        line-height: 1.2em;
+        margin-bottom: .5em;
+    }
+    #upper {
+        height: 500px;
+    }
+    #nav {
+        margin-top: 3px;
+        width: 6.8em;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
