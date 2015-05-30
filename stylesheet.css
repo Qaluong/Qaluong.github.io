@@ -1,45 +1,47 @@
-.heading {
-    left: 0;
-    right: 0;
-    height: 60px;
-    background-color: #333333;
-    font-family: 'Montserrat', sans-serif;
-    padding-left: 15%;
-    padding-right: 15%;
+#upper {
+    background: url("background.png") no-repeat center center fixed;
+    background-size: cover;
+    height: 500px;
+    text-align: left;
+}
+
+#upperText {
+    font-family: Oswald;
+    color: #FFFFFF;
+    padding-left: 10%;
+    padding-top: 175px;
+}
+
+#fullname {
+    font-weight: 400;
+    margin: 0px;
+    letter-spacing: .148em;
+    font-size: 5em;
     display: block;
 }
 
-.titleName {
-    vertical-align: middle;
-    display: table-cell;
-    height: 60px;
-    font-weight: 700;
-    font-size: 48px;
+#nav {
+    text-align: center;
+    width: 6em;
+    font-weight: 400;
     color: #FFFFFF;
-    text-decoration: none;
-    float: left;
-    margin-left: 20px;
-    margin-right: 20px;
+    display: inline-block;
+    font-size: 2em;
+    background-color: #FFFFFF;
+    color: #333333;
 }
 
-.nav {
-    padding-left: 20px;
-    padding-right: 20px;
-    vertical-align: middle;
-    display: table-cell;
-    height: 60px;
-    font-weight: 700;
-    font-size: 24px;
-    color: #ffffff;
-    text-decoration: none;
-    float: right;
+
+#nav:hover {
+    color: #FFFFFF;
+    background-color: #339966;
 }
 
-.nav:hover {
-    background: #339966;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    margin: 0px 0px 0px 0px;
 }
