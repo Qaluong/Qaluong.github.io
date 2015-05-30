@@ -63,6 +63,9 @@ body {
 }
 
 @media screen and (max-width: 680px) {
+    #upper {
+        height: 350px;
+    }
     #fullname {
         font-size: 55px;
         letter-spacing: 7px;
@@ -75,6 +78,9 @@ body {
 }
 
 @media screen and (max-width: 440px) {
+    #upper {
+        height: 450px;
+    }
     #fullname {
         line-height: 65px;
         margin-bottom: 7px;
