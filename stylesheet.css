@@ -20,18 +20,19 @@
 #fullname {
     font-weight: 400;
     margin: 0px;
-    letter-spacing: .148em;
-    font-size: 5em;
+    letter-spacing: 12px;
+    font-size: 80px;
     display: block;
+    margin-left: -4px;
 }
 
 #nav {
     text-align: center;
-    width: 6em;
+    width: 190px;
     font-weight: 400;
     color: #FFFFFF;
     display: inline-block;
-    font-size: 2em;
+    font-size: 32px;
     background-color: #FFFFFF;
     color: #333333;
 }
@@ -57,23 +58,32 @@ body {
         text-align: center;
         }
     #fullname {
-        padding-left: .148em;
+        padding-left: 14px;
     }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 680px) {
     #fullname {
-        font-size: 6em;
-        line-height: 1.2em;
-        margin-bottom: .5em;
+        font-size: 55px;
+        letter-spacing: 7px;
+        padding-left: 9px;
     }
-
     #nav {
-        font-size: 3em;
-        margin-top: 5px;
-        width: 6.8em;
+        font-size: 28px;
+        width: 126px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    #fullname {
+        line-height: 65px;
+        margin-bottom: 7px;
+    }
+    #nav {
+        width: 180px;
         display: block;
         margin-right: auto;
         margin-left: auto;
+        margin-top: 4px;
     }
 }
