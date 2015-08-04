@@ -114,12 +114,14 @@ p {
 }
 
 #chatbopPic {
-    width: calc(100% - 8px);
-    margin: 4px;
+    width: calc(100% - 6px);
+    border: solid 3px #ccc;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 #chatbopPic:hover {
     margin: 0;
-    border: solid 4px #396;
+    border-color: #396;
 }
 
 #footer {
