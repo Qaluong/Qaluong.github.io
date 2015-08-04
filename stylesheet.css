@@ -1,6 +1,11 @@
 a {
     text-decoration: none;
-    color: inherit;
+    color: #396;
+}
+
+a:hover {
+    color: #FFF;
+    background-color: #396;
 }
 
 body {
@@ -14,10 +19,21 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    text-align: left;
+    font-style: bold;
+}
+
 ul {
     list-style-type: none;
-    text-align: left;
-    padding-left: 20%;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    display: block;
 }
 
 p {
@@ -27,7 +43,7 @@ p {
 #bodyText {
     font-family: 'Roboto Slab';
     text-align: justify;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
@@ -43,8 +59,10 @@ p {
     font-family: Oswald, sans-serif;
     color: #FFF;
     padding-top: 270px;
-    padding-left: 10%;
     font-weight: 400;
+    margin: auto;
+    text-align: center;
+    padding-left: 0;
 }
 
 #fullname {
@@ -53,28 +71,38 @@ p {
     font-size: 80px;
     display: block;
     margin-left: -4px;
-    text-align: left;
+    padding-left: 14px;
+    text-align: center;
 }
 
-#nav {
+.nav {
     text-align: center;
-    width: 190px;
+    width: 192px;
     color: #FFF;
     display: inline-block;
-    font-size: 32px;
+    font-size: 28px;
     background-color: #FFF;
     color: #333;
+    border: none;
+    font-family: Oswald, sans-serif;
+    margin-right: 0px;
+    line-height: 0;
+    height: 40px;
 }
 
-#nav:hover {
+.nav:hover {
     color: #FFF;
     background-color: #396;
+}
+
+.nav:focus {
+    outline: none;
 }
 
 #main {
     margin: auto;
     padding: 20px;
-    max-width: 500px;
+    max-width: 650px;
 }
 
 #myself {
@@ -85,9 +113,13 @@ p {
     width: 200px;
 }
 
-#email:hover {
-    color: #FFF;
-    background-color: #396;
+#chatbopPic {
+    width: calc(100% - 8px);
+    margin: 4px;
+}
+#chatbopPic:hover {
+    margin: 0;
+    border: solid 4px #396;
 }
 
 #footer {
@@ -112,19 +144,6 @@ p {
 #footNav:hover {
     color: #396;
     background-color: #FFF;
-}
-
-/* For tablets and half screen */
-@media screen and (max-width: 1024px) {
-    #headerText {
-        margin: auto;
-        text-align: center;
-        padding-left: 0;
-    }
-    #fullname {
-        padding-left: 14px;
-        text-align: center;
-    }
 }
 
 /* For landscape mobile */
@@ -181,4 +200,8 @@ p {
     ul {
         padding: 0;
     }
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }

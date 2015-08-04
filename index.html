@@ -5,29 +5,55 @@
         <link href='http://fonts.googleapis.com/css?family=Oswald|Roboto+Slab' rel='stylesheet' type='text/css'>
         <link rel="icon" type="image/png" href="pics/icon.png" />
         <title>Quang Luong</title>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+            function scrollTo(element) {
+                $('html, body').animate({
+                    scrollTop: $(element).offset().top
+                }, 750);
+            }
+            $(document).ready(function () {
+                $("#headerText").hide().fadeIn(1000);
+                $("#aboutButton").click(function() {
+                    scrollTo("#myself");
+                });
+                $("#projectsButton").click(function() {
+                    scrollTo("#projects");
+                });
+                $("#contactButton").click(function() {
+                    scrollTo("#contact");
+                });
+            })
+        </script>
     </head>
     <body>
         <div id="header">
             <div id="headerText">
                 <h1 id="fullname">QUANG LUONG</h1>
-                <a id="nav" href="index.html#myself">ABOUT</a>
-                <a id="nav" href="projects.html">PROJECTS</a>
-                <a id="nav" href="index.html#footer">CONTACT</a>
+                <button class="nav" id="aboutButton">ABOUT</a>
+                <button class="nav" id="projectsButton">PROJECTS</a>
+                <button class="nav" id="contactButton">CONTACT</a>
             </div>
         </div>
         <div id="main">
             <img id="myself" src="pics/myself.jpg" align="middle" />
             <h1>THAT'S ME</h1>
-            <p id="bodyText">Howdy, I'm Quang. I am an undergraduate student of the University of California, Berkeley. I study computer science. I like learning about how computers work. That's about it, really.</p>
-            <h1>CONTACT ME</h1>
+            <p id="bodyText">Howdy, I'm Quang. I am an undergraduate student of the University of California, Berkeley. I study computer science. I like learning about how computers work and how to make cool software. Here is my <a href="docs/Quang Luong's Resume v2.0.5.pdf" target="_blank">resume</a></p>
+            <h1 id="projects">PROJECTS</h1>
+            <h2>Chat Bop — Summer 2015</h2>
+            <a href="pics/chatbop.png"><img id="chatbopPic" src="pics/chatbop.png" align="middle" /></a>
+            <p id="bodyText">Chat Bop is an instant messenger web app that I made in the Summer of 2015 to get a grasp on web development. It is also the first web app project I completed. It relies on Meteor.js to provide the reactive chat logs and display new messages instantly. It behaves like any normal instant messenger; users can send friend requests to other users, keep them in a friends list, and exchange messages with those users instantly. You can check it out at <a href="https://chatbop.meteor.com" target="_blank">chatbop.meteor.com</a>. The source code can be found <a href="https://github.com/Qaluong/chat-bop" target="_blank">here</a>.
+            <h1 id="contact">CONTACT ME</h1>
             <ul id="bodyText">
                 <li>Email: <a id="email" href="mailto:quang@quang.io">quang@quang.io</a></li>
                 <li>Phone: 714 333-7914</li>
             </ul>
         </div>
         <div id="footer">
-            <a id="footNav" href="https://www.facebook.com/quang.luong.777">Facebook</a>
+            <a id="footNav" href="https://www.facebook.com/qaluong">Facebook</a>
             <a id="footNav" href="https://www.linkedin.com/pub/quang-luong/b6/783/1b4">LinkedIn</a>
             <a id="footNav" href="https://github.com/Qaluong">GitHub</a>
         </div>
